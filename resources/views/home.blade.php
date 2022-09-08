@@ -5,11 +5,14 @@
         <div class="row justify-content-between">
             @forelse ($movies as $movie)
                 <div class="card col-2 mx-3 my-4 border border-5">
-                    <h3>{{ $movie->title }}</h3>
-                    <h5>{{ $movie->original_title }}</h5>
-                    <span>{{ $movie->nationality }}</span>
-                    <span>{{ $movie->date }}</span>
-                    <span>{{ $movie->vote }}</span>
+                    <img src="{{ $movie->poster }}" alt="" >
+                    <div class="desc">
+                        <h3>{{ $movie->title }}</h3>
+                        <h5>{{ $movie->original_title }}</h5>
+                        <span>{{ $movie->nationality }}</span>
+                        <span>{{ $movie->date }}</span>
+                        <span>{{ $movie->vote }}</span>
+                    </div>
                 </div>
                 
             @empty

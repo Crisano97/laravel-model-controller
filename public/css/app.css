@@ -12627,3 +12627,18 @@ fieldset:disabled .btn {
   }
 }
 
+div.card {
+  padding: 0;
+  height: 30rem;
+}
+
+div.card img {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 2rem;
+}
+
+div.card div.desc {
+  padding: 0 1rem;
+}
+
